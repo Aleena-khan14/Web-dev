@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+/* <---------------Header CSS------------> */
+header
+{
+  background-color: white;
+  overflow: auto;
+  position: sticky;
+   top: 0;
+   z-index: 1000;
+   
+}
+.navbar
+{
+  background-color: #fdf2e9;
+   padding:30px 80px 30px 30px;
+   height: 90px;
+  display: flex;
+   justify-content: space-between;
+   /* width:200px; */
+   
+  
+   
+}
+
+.navlinks
+{
+  width: auto;
+  list-style: none;
+  display: flex;
+  /* padding:0px 20px 0px 0px; */
+   gap: 30px;
+  align-items: center;
+
+}
+.navlinks li a
+{
+    color: #333c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 1.5 rem;
+}
+.logo img
+{
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+   /* padding:35px 0px 0px 40px; */
+}
+
+/* <---------------Main heading CSS------------> */
+.container1
+{
+  /* padding:30px 40px 35px 35px; */
+  /* background-color: aquamarine; */
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+} 
+.hero
+{
+  /* background-color: brown; */
+   background-color: #fdf2e9;
+  /* height:700px; */
+  height:120vh;
+  padding:40px;
+}
+.rightcontainer
+{
+  /* background-color: rgb(72, 27, 114); */
+  width:50%;
+  height:100vh;
+  /* padding:10px; */
+}
+/* .imgcontainer
+{
+ background-color: blue;
+ height:auto;
+}
+ */
+.rightcontainer img
+{
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+} 
+.leftcontainer
+{
+ width:50%;
+ /* background-color: chocolate; */
+ height:110vh;
+ display: flex;
+ flex-direction: column;
+ padding:30px 40px 10px 20px;
+}
+h1
+{
+  font-size: 3rem;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #333;
+}
+.secondary-description
+{
+  padding-top:30px;
+  color: #555;
+  font-weight: 400;
+  padding-bottom: 40px;
+  padding-right: 10px;
+  line-height: 1.6;
+  font-size: 1.3rem;
+
+}
+
+.btn-container
+{
+  padding-top:10px;
+
+  /* background-color:burlywood; */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+
+}
+button
+{
+  /* border: 1px solid black; */
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 10px 20px;
+  /* width:15vw; */
+  /* margin-right:10px; */
+}
+.bt1
+{
+  background-color: chocolate;
+  color: white;
+}
+.testmonials
+{
+  margin-top:40px;
+  padding:0px 10px 0px 0px; 
+  height:10vh; 
+  /* background-color:blueviolet; */
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 10px;
+  
+}
+.client_images
+{
+ /* background-color: #555; */
+ display: flex;
+ position: relative;
+  
+ } 
+
+ 
+.client_images img {
+  
+  height: 45px;
+  width: 45px;
+  margin-left: -15px; /* overlap */
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.client_images img:first-child {
+  margin-left: 0;
+}
+.client_images img:hover {
+  transform: scale(1.2);
+  z-index: 17;
+}
+/* .statistical_data
+{
+  background-color: bisque;
+  
+} */
+.statistical_data p {
+  color: #555;
+  font-weight: bolder;
+  letter-spacing: 1;
+  font-size: 1.1rem;
+}
+
+
+/* <---------------Featured Companies CSS------------> */
+.featured-companies
+{
+  height:50vh;
+  /* background-color: greenyellow; */
+  padding:20px;
+}
+.companies-container
+{
+  /* background-color: #d84848; */
+  padding:20px 0px 20px 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-container
+{
+  justify-content: space-around;
+}
+.logo-container img
+{filter: grayscale(100%);
+   width:18vw;
+   height: auto;
+   padding:15px;
+   opacity: 60%;
+
+
+  }
+  .companies-container p
+  {
+    color: #555c;
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  /* <---------------How it works CSS------------> */
+  html {
+  scroll-behavior: smooth;
+  }
+
+  #section-working {
+  scroll-margin-top: 90px;
+  }
+  .section-work
+  {
+    /* background-color: #333; */
+    height:170vh;
+  }
+  .work-container
+  {
+    padding:30px 10px 0px 90px;
+    /* background-color: aqua; */
+    height:120vh;
+    
+  }
+  .headings
+  {
+   color:#cf711f;
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 1rem;
+   padding-bottom: 20px;
+   
+
+  }
+  .heading-description
+  {
+    color:#333;
+    font-size: 2.7rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .screens
+  {
+    display: flex;
+    height:70vh;
+    /* background-color: #8b501b; */
+    justify-content: space-around;
+    width:80vw;
+    padding-top:30px;
+    padding-bottom: 10px;
+    
+
+  }
+
+
+
+.left-screen
+{
+  width: 50%;
+  height:60vh;
+  /* background-color: rgb(185, 126, 126); */
+  
+}
+
+.left-screen-data
+{
+  display: flex;
+  flex-direction: column;
+  padding:50px 90px 50px 5px;
+  /* background-color: green; */
+  height:60vh;
+
+}
+
+.working-step
+{
+  opacity: 20%;
+  font-size: 4.5rem;
+  padding-bottom: 20px;
+  color: #333;
+}
+.working-heading
+{
+  color: #333;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.working-descriptions
+{
+  line-height: 1.8;
+  color: #555;
+  font-weight: 400;
+  font-size: 1.1rem;
+  /* text-align: justify; */
+}
+/*   
+.background-circles {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+ 
+} 
+
+.circle-large {
+  width: 300px;
+  height: 300px;
+ 
+  border-radius: 50%;
+  opacity: 0.5;
+  background-color: rgb(94, 43, 136);
+}
+.circle-small {
+ 
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(97, 33, 33);
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+.phone-image{
+  position: relative;
+  z-index: 2;
+  max-width: 30px;
+
+} */
+.right-screen 
+  {
+    height:60vh;
+     width:50%;
+    /* background-color: rgb(255, 208, 0); */
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     /* padding: 30px 0px 20px 0px;  */
+    
+  } 
+.background-circles {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  /* background-color: brown; */
+}
+
+/* Common Circle Styles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color:  #dfbfa5; /* light orange-beige */
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+/* Outer Circle */
+.circle.large {
+  width: 22vw;
+  height: 22vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+
+/* Inner Circle */
+.circle.small {
+  width: 17vw;
+  height: 17vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+
+/* Phone Image */
+.phone-image {
+  position: relative;
+  z-index: 2;
+  /* max-width: 280px; */
+  width: 12vw;
+  height: auto;
+}
+
+/* Make sure circles don't get too small */
