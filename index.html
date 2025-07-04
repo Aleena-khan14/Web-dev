@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     
@@ -21,10 +24,10 @@
             
             <nav class="navbar">
                 <div class="logo">
-                <img src="Images/omnifood-logo.png" alt="omnifood-logo.png">
+                <img class="OmniFood-logo" src="Images/omnifood-logo.png" alt="omnifood-logo.png">
                 </div>
                 <ul class="navlinks">
-                    <li><a href="#section-working">How it works</a></li>
+                    <li><a href="#section-work">How it works</a></li>
                     <li><a href="#">Meals</a></li>
                     <li><a href="#">Testmonials</a></li>
                     <li><a href="#">Pricing</a></li>
@@ -99,17 +102,18 @@
         </div>
     </section>
     <!------------Steps of how its works--------->
-    <section  id="section-working" class="section-work">
+    <section  id="section-work" class="section-work">
         <div class="work-container">
             <p class="headings">How it works</p>
              <h2 class="heading-description">Your daily dose of health in 3 simple steps</h2>
-            <div class="screens">
+            <!-------------Screen1---------->
+             <div class="screens">
                 <div class="left-screen">
                     <div class="left-screen-data">
                     <h1 class="working-step">01</h1>
                     <h2 class="working-heading">Tell us what you like</h2>
                     <p class="working-descriptions">Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients.</p>
-                </div>
+                    </div>
                 </div>
                 <div class="right-screen">
                     
@@ -120,8 +124,179 @@
                         </div>
                 </div>
             </div>
+           <!-- <--------Screen2----------> 
+            <div class="screens">
+                <div class="right-screen">
+                    
+                        <div class="background-circles">
+                        <div class="circle large"></div>
+                        <div class="circle small"></div>
+                        <img src="Images/app-screen-2.png" alt="App Screen" class="phone-image">
+                        </div>
+                   
+                    
+                </div>
+                <div class="left-screen">
+                    <div class="left-screen-data">
+                     <h1 class="working-step">02</h1>
+                    <h2 class="working-heading">Approve your weekly meal plan</h2>
+                    <p class="working-descriptions">Once per week, approve the
+                         meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-------------Screen3---------->
+             <div class="screens">
+                <div class="left-screen">
+                    <div class="left-screen-data">
+                    <h1 class="working-step">03</h1>
+                    <h2 class="working-heading">Receive meals at convenient time</h2>
+                    <p class="working-descriptions">Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule daily</p>
+                    </div>
+                </div>
+                <div class="right-screen">
+                    
+                    <div class="background-circles">
+                        <div class="circle large"></div>
+                        <div class="circle small"></div>
+                        <img src="Images/app-screen-3.png" alt="App Screen" class="phone-image">
+                        </div>
+                </div>
+            </div>
+
         
         </div>
+        </section>
+
+
+        <!-----------------------Meals Sections and cards--------------------> 
+        <section id="meals" class="meals">
+            <div class="meals-container">
+                <p class="headings p1">Meals</p>
+                <h2 class="heading-description d1">Omnifood AI chooses from 5,000+ recipes</h2>
+                <div class="card-container">
+                    <!--------------Card1----------->
+                    <div class="card">
+                    <img src="Images/meal-1.jpg" alt="Avatar">
+                    <div class="card-body">
+                        
+                        <div class="tags" aria-label="Diet tags">
+                        <span class="tag vegetarian">Vegetarian</span>
+                        </div>
+                        <h4 class="meal-name">Japanese Gyozas</h4>
+
+                        <div class="info-row">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <span><strong>659</strong> calories</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span><strong>NutriScore ® 74</strong></span>
+                        </div>
+
+                        <div class="info-row">
+                            <i class="fa-solid fa-star"></i>
+                            <span><strong>4.9</strong> rating (537)</span>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <!--------------Card2----------->
+                    <div class="card c2">
+                    <img src="Images/meal-2.jpg" alt="Avatar" >
+                    <div class="card-body">
+                         <div class="tags" aria-label="Diet tags">
+                        <span class="tag vegan">Vegen</span>
+                        <span class="tag paleo">Paleo</span>
+                        </div>
+                       <h4 class="meal-name">Avacado Salad</h4>
+
+                        <div class="info-row">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <span><strong>659</strong> calories</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span><strong>NutriScore ® 74</strong></span>
+                        </div>
+
+                        <div class="info-row">
+                            <i class="fa-solid fa-star"></i>
+                            <span><strong>4.9</strong> rating (537)</span>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!--------------Card3----------->
+                    <div class="card c3">
+                    
+                    <div class="diet-body">
+                        <h2 class="card3-Heading">Works with any diet:</h2>
+                        
+                           <div class="check-item">Vegetarian</div>
+                           <div class="check-item">Vegan</div>
+                            <div class="check-item">Pescatarian</div>
+                            <div class="check-item">Gluten-free</div>
+                            <div class="check-item">Lactose-free</div>
+                            <div class="check-item">Keto</div>
+                            <div class="check-item">Paleo</div>
+                            <div class="check-item">Low FODMAP</div>
+                            <div class="check-item">Kid-friendly</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <footer class="footer">
+            <div class="footer-container">
+             
+                <div class="footer-heading footer-logo">
+                    <img class="OmniFood-logo" src="Images/omnifood-logo.png" alt="omnifood-logo.png">
+                    <div class="social-links">
+                        
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                    </div>
+                    <p class="Copyright">Copyright © 2025 by Omnifppd, Inc. All right reseved.</p>
+                </div>
+                <div class="footer-heading footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+                    <p>Phone: <a href="tel:+14152016370">415-201-6370</a></p>
+                    <p>Email: <a href="mailto:hello@omnifood.com">hello@omnifood.com</a></p>
+                
+                </div>
+                <div class="footer-heading footer-account">
+                    <h3>Account</h3>
+                    <ul class="footer-list-styling">
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">iOS app</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                    </div>
+                 <div class="footer-heading footer-company">
+                    <h3>Company</h3>
+                    <ul class="footer-list-styling" >
+                        <li><a href="#">About Omnifood</a></li>
+                        <li><a href="#">For Business</a></li>
+                        <li><a href="#">Cooking Partners</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                    </div>
+                    <div class="footer-heading footer-resources">
+                    <h3>Resources</h3>
+                    <ul class="footer-list-styling">
+                        <li><a href="#">Recipe Directory</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Cooking Partners</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                    </div>
+            </div>
+        </footer>  -->
         
 
     
