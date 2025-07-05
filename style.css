@@ -243,6 +243,7 @@ button
   {
     /* background-color: #333; */
     height:250vh;
+    padding:30px;
   }
   .work-container
   {
@@ -498,6 +499,10 @@ button
   
 }
 
+.meals
+{
+   padding:30px;
+}
 .card-container
 {
   display: flex;
@@ -661,6 +666,30 @@ button
       top: 0;
     }
 
+.Recipes-link
+{
+  display: flex;
+  justify-content: center;
+  padding:50px;
+}
+
+ .Recipes-link a
+ {
+    color: rgb(230, 126, 34);;
+    text-decoration: none;              
+  border-bottom: 2px solid darkorange ;   
+  padding-bottom: 4px; 
+  font-size: 1rem;
+  letter-spacing: 1px;              
+  display: inline-flex;
+ }  
+ 
+ 
+.Recipes-link a:hover {
+  color: #cf711f;
+  /* border-color: darkorange; */
+  border-bottom: none;
+}
 /* <---------------Testminial Section CSS-----------> */
 .testimonials
 {
