@@ -146,7 +146,7 @@ button
   background-color: chocolate;
   color: white;
 }
-.testmonials
+.clients-container
 {
   margin-top:40px;
   padding:0px 10px 0px 0px; 
@@ -660,3 +660,101 @@ button
       left: 0;
       top: 0;
     }
+
+/* <---------------Testminial Section CSS-----------> */
+.testmonials
+{
+  background-color: #dfbfa5;
+}
+.testimonial-container
+{
+  padding:20px 30px 10px 10px;
+  /* background-color: #16a34a; */
+  display: flex;
+  justify-content: center;
+}
+.testmonial-description
+{
+  margin:100px 20px 10px 70px;
+  /* background-color: gray; */
+  display: flex;
+  flex-direction: column;
+}
+.customer-testmonials
+{
+  /* background-color: #cf711f; */
+  width:50%;
+ 
+}
+
+.row1-testmonials
+{
+  display: flex;
+  /* background-color: #16a34a; */
+  justify-content: space-between;
+  padding:70px 10px 10px 0px;
+
+  
+}
+
+.customers
+{
+  padding:10px 10px 10px 30px;
+  /* background-color: #82ad32; */
+  width: 50%;
+}
+.customer-img
+{
+  
+  height: 60px;
+  width: 60px;
+  /* margin-left: -15px;  */
+  border-radius: 50%;
+  /* border: 2px solid white; */
+}
+.testmonial-text
+{
+  color: #333;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  padding:15px 0px;
+}
+.customer-name
+{
+  color: #333;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+.gallery-container
+{
+  width: 50%;
+  /* background-color: brown; */
+  padding:0px 20px 20px 20px;
+}
+
+
+.gallery-row{
+ display: flex;
+ flex-wrap: wrap;
+
+ /* background-color: #555; */
+ /* padding:0px 10px 20px 10px; */
+}
+
+.gallery-column
+{
+  flex: 25%;
+  padding:0px 20px 10px 0px;
+}
+
+.gallery-column img
+{
+  width:100%;
+  vertical-align: middle;
+  margin-top: 50px;
+}
