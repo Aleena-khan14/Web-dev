@@ -177,11 +177,7 @@ button {
   transform: scale(1.2);
   z-index: 17;
 }
-/* .statistical_data
-{
-  background-color: bisque;
-  
-} */
+
 .statistical_data p {
   color: #555;
   font-weight: bolder;
@@ -192,7 +188,7 @@ button {
 /* <---------------Featured Companies CSS------------> */
 .featured-companies {
   height: auto;
-  /* background-color: greenyellow; */
+  
   padding: 20px;
 }
 .companies-container {
@@ -296,7 +292,7 @@ button {
   font-weight: 400;
    /* font-size: clamp(2rem, 4vw, 3rem); */
   font-size: 1.1rem;
-  /* text-align: justify; */
+  
 }
 
 .right-screen {
@@ -370,10 +366,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-/* 
-.background-circles .large {
-  display: none; 
-} */
+
 
 
 .phone-image {
@@ -382,7 +375,7 @@ button {
   height: auto;
 } 
 
-/* Make sure circles don't get too small */
+
 
 
 
@@ -559,6 +552,10 @@ button {
   /* border-color: darkorange; */
   border-bottom: none;
 }
+
+
+
+
 /* <---------------Testminial Section CSS-----------> */
 .testimonials {
   background-color: #fdf2e9;
@@ -621,23 +618,6 @@ button {
   padding: 0px 20px 20px 20px;
 }
 
-/* .gallery-row {
-  display: flex;
-  flex-wrap: wrap;
-
-} */
-
-/* .gallery-column {
-  flex: 25%;
-  padding: 0px 20px 10px 0px;
-}
-
-.gallery-column img {
-  width: 100%;
-  vertical-align: middle;
-  margin-top: 50px;
-} */
-
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -653,6 +633,8 @@ button {
   object-fit: cover;
 }
 
+
+
 /* <!----------------Pricing Section----------> */
 /*again check padding */
 .pricing-container {
@@ -661,8 +643,7 @@ button {
 }
 
 .pricings-plan {
-  /* background-color: brown; */
-  /* padding-top: 70px; */
+ 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -674,7 +655,7 @@ button {
   text-align: center;
   padding-bottom: 40px;
 
-  /* padding-bottom:10px; */
+ 
 }
 .pricing-description p {
   text-transform: uppercase;
@@ -694,13 +675,9 @@ button {
 }
 
 .card-pricing {
-  /* margin: 0; */
-  /* padding-right:10px; */
-  /* margin: 10px 40px 10px 0px; */
+
   border-radius: 20px;
-  /* border-radius: 10px; */
-  /* max-width: 400px; */
-  /* padding:10px;    */
+  
   padding-bottom: 30px;
   padding-top:20px;
   max-width: 430px;
@@ -711,24 +688,20 @@ button {
 .c1 {
   background-color: white;
   border: 1px solid #dfbfa5;
-  /* padding:10px; */
-  /* width:500px; */
-  /* padding-bottom:60px; */
+  
 }
 
 .c2 {
   background-color: #fdf2e9;
   position: relative;
-  /* padding-bottom:60px; */
+  
 }
 
 .c2 img {
   width: 100px;
   height: 100px;
   position: absolute;
-  /* top:10px;
-  right:50px; */
-  /* top:0%; */
+ 
   top: -8px;
   right: -8px;
 }
@@ -779,7 +752,7 @@ button {
   background: #EA9142;
   border-radius: 20px;
   display: flex;
-  /* flex-wrap: wrap; */
+  
   flex-wrap: wrap;
   
   
@@ -789,7 +762,6 @@ button {
 
 .form-filling {
   width: 65%;
-  /* background-color: #16a34a; */
   
   padding:20px 20px 10px 30px;
 }
@@ -850,7 +822,7 @@ button {
   color:#45260a;
   font-weight: 700;
   margin-bottom:10px;
-  /* text-transform: uppercase; */
+ 
 }
 .form-entity input,
 .form-entity select {
@@ -955,7 +927,7 @@ button {
   margin: 0 auto;
   display: flex;
   
-  /* background-color: #16a34a; */
+  
   justify-content: space-between;
   gap: 30px;
 }
@@ -1024,7 +996,9 @@ button {
 }
 
 
-/* ========== Mobile view (≤944px) ========== */
+/*------------------Media Queries------------------------*/
+
+/* ========== (≤944px) ========== */
 @media (max-width: 944px) {
   /*Side bar Responsiveness*/
   .hamburger {
@@ -1125,12 +1099,6 @@ button {
       gap:10px;
       /* padding: 20px; */
     }
-     
-    
-
-
-
-
     .form-row
      {
         flex-direction: column;
@@ -1159,14 +1127,10 @@ button {
   {
     width: 100%;
   }
-  /* .footer-container
-{
-  flex-wrap: nowrap;
-} */
-
+ 
 .footer-col {
   flex: 1 1 100px;
-  /* background-color: #45260A; */
+ 
 }
 
  
