@@ -31,6 +31,16 @@ html {
   justify-content: space-between;
   /* width:200px; */
 }
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+.hamburger,
+.close-btn {
+  display: none;
+}
+
+
 
 .navlinks {
   width: auto;
@@ -63,13 +73,14 @@ html {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
 }
 .hero {
   /* background-color: brown; */
   background-color: #fdf2e9;
   /* height:700px; */
-  height: 120vh;
+  height: auto;
   padding: 40px;
 }
 .rightcontainer {
@@ -85,14 +96,14 @@ html {
 }
  */
 .rightcontainer img {
-  width: 90%;
+  width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 .leftcontainer {
   width: 50%;
   /* background-color: chocolate; */
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 30px 40px 10px 20px;
@@ -180,7 +191,7 @@ button {
 
 /* <---------------Featured Companies CSS------------> */
 .featured-companies {
-  height: 50vh;
+  height: auto;
   /* background-color: greenyellow; */
   padding: 20px;
 }
@@ -192,13 +203,17 @@ button {
   align-items: center;
 }
 .logo-container {
-  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:10px;
+  gap:10px;
 }
 .logo-container img {
   filter: grayscale(100%);
-  width: 18vw;
+  width: 15vw;
   height: auto;
-  padding: 15px;
+  padding: 10px 20px 10px 10px;
   opacity: 60%;
 }
 .companies-container p {
@@ -542,26 +557,30 @@ button {
 }
 .testimonial-container {
   padding: 20px 30px 10px 10px;
-  /* background-color: #16a34a; */
+  background-color: #16a34a;
   display: flex;
   justify-content: center;
 }
+.customer-testmonials {
+  background-color: #cf711f;
+  width: 50%;
+  padding:30px;
+}
 .testmonial-description {
-  margin: 100px 20px 10px 70px;
-  /* background-color: gray; */
+  /* margin: 100px 20px 10px 70px; */
+  padding:40px 10px 10px 20px; 
+  background-color: gray;
   display: flex;
   flex-direction: column;
 }
-.customer-testmonials {
-  /* background-color: #cf711f; */
-  width: 50%;
-}
+
 
 .row1-testmonials {
   display: flex;
   /* background-color: #16a34a; */
   justify-content: space-between;
-  padding: 70px 10px 10px 0px;
+  flex-wrap: wrap;
+  padding: 20px 0px 10px 0px;
 }
 
 .customers {
@@ -590,19 +609,17 @@ button {
 
 .gallery-container {
   width: 50%;
-  /* background-color: brown; */
+  background-color: brown;
   padding: 0px 20px 20px 20px;
 }
 
-.gallery-row {
+/* .gallery-row {
   display: flex;
   flex-wrap: wrap;
 
-  /* background-color: #555; */
-  /* padding:0px 10px 20px 10px; */
-}
+} */
 
-.gallery-column {
+/* .gallery-column {
   flex: 25%;
   padding: 0px 20px 10px 0px;
 }
@@ -611,6 +628,21 @@ button {
   width: 100%;
   vertical-align: middle;
   margin-top: 50px;
+} */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 /* <!----------------Pricing Section----------> */
@@ -694,7 +726,8 @@ button {
   margin-top: 70px;
   margin-bottom: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+ 
   /* background-color: #16a34a; */
 }
 .feature-heading {
@@ -729,15 +762,19 @@ button {
   background: #EA9142;
   border-radius: 20px;
   display: flex;
-  padding: 0px 0px 0px 50px;
-  margin: 80px;
+  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  
+  
+  margin: 40px auto;
+  max-width: 1200px;
 }
 
 .form-filling {
   width: 65%;
   /* background-color: #16a34a; */
   
-  padding-right:40px;
+  padding:20px 20px 10px 30px;
 }
 .form-filling h1
 {
@@ -756,14 +793,16 @@ button {
 }
 .form-picture {
   width: 35%;
+  height: auto;
   /* background-color: brown; */
 }
 
 .form-picture img {
   width: 100%;
+  height: 100%;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 0px 10px 10px 0px;
-   background-color: orange;
   opacity: 0.6; /* adjust intensity */
   /* mix-blend-mode: multiply; */
 }
@@ -771,13 +810,14 @@ button {
 .my-form {
   
   font-size: 1rem;
+  margin-top: 20px;
   
 }
 .form-row
 {
   display: flex;
  
-  margin: 30px 10px 10px 0px;
+  /* margin: 20px 10px 5px 0px; */
   padding:10px;
   /* background-color: #94d82d; */
 }
@@ -785,6 +825,7 @@ button {
   display: flex;
   flex-direction: column;
    flex: 1;
+   padding:10px;
   
    
 }
@@ -902,3 +943,110 @@ button {
 .footer-list-styling li a:hover {
   color: #555;
 }
+
+
+/* ========== Mobile view (≤944px) ========== */
+@media (max-width: 944px) {
+  /*Side bar Responsiveness*/
+  .hamburger {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    top: 0;   /*Aligns the top of the sidebar to the top edge of the screen.*/
+    right: -100%;  /*push the sidebar to the right by its full width, making it hidden. */
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+    transition: right 0.5s ease;
+    z-index: 1000;
+    
+    /* opacity: 1; */
+    background: rgba(255, 255, 255, 0.9); /*semi-transparent white */
+    backdrop-filter: blur(2px);  
+  }
+  .nav-wrapper.open {
+    right: 0;    /*right edge of the sidebar touches the right side of the screen.sidebar is fully visible now.*/
+  }
+
+  .navlinks {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    
+  }
+  .navlinks li a
+  {
+    font-size: 1.5rem;
+  }
+  
+
+  .close-btn {
+    display: block;
+    font-size: 30px;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  /*Section Hero Responsiveness*/
+  .container1 {
+    
+    flex-direction: column;
+    height: auto;
+    /* background-color: #45260A; */
+    
+}
+ .leftcontainer,
+  .rightcontainer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .rightcontainer img {
+      width: 100%;
+      max-width: 400px; /* ✅ Limits how big it can grow */
+      height: auto;
+      display: block;
+      margin: 0 auto;    /* ✅ Center the image */
+}
+
+    .heading-description
+    {
+      font-size:2rem;
+    }
+
+    .testimonial-container
+    {
+      flex-direction: column;
+    }
+
+    .customer-testmonials,.gallery-container
+    {
+      width:100%;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap:10px;
+      /* padding: 20px; */
+    }
+    .features-container
+    {
+      flex-wrap: wrap;
+    }
+
+    .form-row
+     {
+        flex-direction: column;
+      }
+    }

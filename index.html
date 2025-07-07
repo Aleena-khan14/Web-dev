@@ -31,6 +31,11 @@
                 <div class="logo">
                 <img class="OmniFood-logo" src="Images/omnifood-logo.png" alt="omnifood-logo.png">
                 </div>
+                <div class="hamburger" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="nav-wrapper" id="navWrapper">
+                    <div class="close-btn" onclick="toggleSidebar()">&times;</div>
                 <ul class="navlinks">
                     <li><a href="#section-work">How it works</a></li>
                     <li><a href="#meals">Meals</a></li>
@@ -39,6 +44,7 @@
                     <li><a href="#form-section"><button class="bt1">Try for free</button></a></li>
                     
                 </ul>
+                </div>
             </nav>
             </div>
         
@@ -346,7 +352,7 @@
                 </div>
                 <div class="gallery-container">
                     <!-- <p>bye</p> -->
-                    <div class="gallery-row">
+                    <!-- <div class="gallery-row">
                     <div class="gallery-column">
                         <img src="Images/gallery-1.jpg" alt="" >
                          <img src="Images/gallery-4.jpg" alt="" >
@@ -367,8 +373,22 @@
                           <img src="Images/gallery-9.jpg" alt="" >
                           <img src="Images/gallery-12.jpg" alt="" >
                     </div>
-                </div>
-                </div>
+                </div> -->
+                     <div class="gallery-grid">
+                        <img src="Images/gallery-1.jpg" alt="">
+                        <img src="Images/gallery-2.jpg" alt="">
+                        <img src="Images/gallery-3.jpg" alt="">
+                        <img src="Images/gallery-4.jpg" alt="">
+                        <img src="Images/gallery-5.jpg" alt="">
+                        <img src="Images/gallery-6.jpg" alt="">
+                        <img src="Images/gallery-7.jpg" alt="">
+                        <img src="Images/gallery-8.jpg" alt="">
+                        <img src="Images/gallery-9.jpg" alt="">
+                        <img src="Images/gallery-10.jpg" alt="">
+                        <img src="Images/gallery-11.jpg" alt="">
+                        <img src="Images/gallery-12.jpg" alt="">
+                    </div>    
+            </div>
             </div>
                 
             </testmonials>
@@ -561,14 +581,18 @@
     
         <script>
             
-            function showSidebar(){
-                const sidebar=document.querySelector(".sidebar")
-                 sidebar.style.display='flex'
-            }
-            function closeSidebar(){
-                const sidebar=document.querySelector(".sidebar")
-                sidebar.style.display='none'
-            }
+
+             function toggleSidebar() {
+                const nav = document.getElementById("navWrapper");
+                nav.classList.toggle("open");
+                }
+           
+            // Close sidebar when any nav link is clicked
+                document.querySelectorAll('.navlinks a').forEach(link => {
+                    link.addEventListener('click', () => {
+                    document.getElementById("navWrapper").classList.remove('open');
+                    });
+                });
         </script>
     
 </body>
