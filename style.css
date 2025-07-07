@@ -108,7 +108,7 @@ html {
   flex-direction: column;
   padding: 30px 40px 10px 20px;
 }
-h1 {
+.primaryheading {
   font-size: 3rem;
   line-height: 1.05;
   font-weight: 800;
@@ -148,12 +148,13 @@ button {
 }
 .clients-container {
   margin-top: 40px;
-  padding: 0px 10px 0px 0px;
-  height: 10vh;
+  /* padding: 0px 10px 0px 0px; */
+  /* height: 10vh; */
   /* background-color:blueviolet; */
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* justify-content: center; */
   align-items: center;
   gap: 10px;
 }
@@ -177,7 +178,10 @@ button {
   transform: scale(1.2);
   z-index: 17;
 }
-
+.statistical_data
+{
+  width: 100%;
+}
 .statistical_data p {
   color: #555;
   font-weight: bolder;
@@ -1072,7 +1076,10 @@ button {
       display: block;
       margin: 0 auto;    /* ✅ Center the image */
 }
-
+     .primaryheading
+     {
+      font-size:2.4rem;
+     }
    
 
     .heading-description
@@ -1084,7 +1091,8 @@ button {
     {
       flex-direction: column;
     }
-
+     
+    
     .customer-testmonials,.gallery-container
     {
       width:100%;
@@ -1107,6 +1115,7 @@ button {
 
 
 @media (max-width: 540px) {
+
     .screens,
   .screens-reverse {
     flex-direction: column-reverse;
@@ -1139,6 +1148,11 @@ button {
 
 
 @media (max-width: 650px) {
+  
+  
+  /* .clients-container {
+    width:100%;
+  } */
   .background-circles {
     width: 200px;
     height: 200px;
@@ -1169,10 +1183,16 @@ button {
 {
   flex-wrap: wrap;
 }
-
+.features-container
+  {
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    
+  }
 
 
 }
+
 
 
 
